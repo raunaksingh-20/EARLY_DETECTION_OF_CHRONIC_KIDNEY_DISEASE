@@ -8,7 +8,7 @@ The application is built with Flask and allows users to input their medical info
 
 ## Dataset
 
-The model was trained on the **Chronic Kidney Disease Dataset** from the UCI Machine Learning Repository. This dataset contains 400 instances with 25 attributes related to various blood and urine tests.
+The model was trained on the **Chronic Kidney Disease Dataset** from Kaggle. This dataset contains 400 instances with 25 attributes related to various blood and urine tests.
 
   - **Source:** [Chronic Kidney Disease Dataset](https://www.kaggle.com/datasets/mansoordaku/ckdisease)
 
