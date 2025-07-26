@@ -32,19 +32,30 @@ The model uses the following 8 features for prediction:
   - **Data Handling:** Pandas, NumPy
   - **Development Environment:** Jupyter Notebook
 
-## File Structure
+## 📁 File Structure
 
 ```
-.
-├── app.py                  # Main Flask application
-├── ckd_final.ipynb         # Jupyter Notebook for model training
-├── CKD.pkl                 # Saved logistic regression model file
-├── scaler.pkl              # Saved standard scaler file
-├── requirements.txt        # Python dependencies
-└── templates/
-    ├── home.html           # Landing page
-    ├── indexview.html      # Prediction form page
-    └── result.html         # Prediction result page
+EARLY_DETECTION_OF_CHRONIC_KIDNEY_DISEASE/
+├── dataset/
+│   └── kidney_disease.csv        # The raw dataset used for training
+│
+├── Flask/
+│   ├── static/
+│   │   └── stylesheets/          # CSS files for styling web pages
+│   ├── templates/
+│   │   ├── home.html             # The main landing page
+│   │   ├── indexview.html        # The prediction input form page
+│   │   └── result.html           # The page to display prediction results
+│   ├── app.py                    # The core Flask application file (routing, logic)
+│   ├── CKD.pkl                   # The pickled trained machine learning model
+│   └── scaler.pkl                # The pickled data scaler for preprocessing
+│
+├── Training/
+│   ├── Chronic_kidney_disease_analysis.ipynb # Jupyter Notebook for analysis and model creation
+│   ├── CKD.pkl                   # A copy of the saved model
+│   └── kidney_disease.csv        # A copy of the dataset for the training notebook
+│
+└── README.md                     # This file
 ```
 
 ## Setup and Installation
